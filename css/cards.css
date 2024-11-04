@@ -10,9 +10,15 @@
     width: 300px;
     max-height: 400px;
     margin: 10px;
-    cursor: pointer;
     border-radius: 5px;
     overflow: hidden;
+}
+
+@media (max-width: 601px) {
+    .card {
+        max-height: 600px;
+        overflow: auto;
+    }
 }
 
 .card:hover {
@@ -55,4 +61,12 @@
 .card-texto {
     margin: 10px;
     text-align: center;
+}
+
+.card button {
+    margin-left: 50px;
+}
+
+.card button:hover {
+    background-color: #0b0;
 }

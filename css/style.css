@@ -47,6 +47,11 @@ header {
     font-family: "Varela Round", sans-serif;    
     font-size: 2em;
     color: #fff;
+
+}
+
+#titulo span {
+    color: lightgreen;
 }
 
 #usuario{
@@ -66,6 +71,7 @@ nav {
     align-items: center;
 }
 
+
 .boton-hamburguesa {
     width: 35px;
     height: 35px;
@@ -76,6 +82,7 @@ nav {
     background-color:#bbb;
     border: 1px solid #444;
     border-radius: 5px;
+    color:#000;
 }
 
 .boton-hamburguesa:hover {
@@ -99,11 +106,13 @@ nav {
         justify-content: center;
         align-items: center;
     }
-    #barra div {
-        margin : 20px;
-        padding: 20px;
+    #barra a {
+        margin-left: 10px;
+        padding: 16px;
+        color: #000;
+        text-decoration: none;
     }
-    #barra div:hover {
+    #barra a:hover {
         background-color: #999;
         cursor: pointer;
     }
