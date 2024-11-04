@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    /* width: 100%; */
+    height: 100vh;
+    grid-template-rows: 65px 50px 1fr 50px;
+}
+
+/*  ------------  HEADER  -----------*/
+header {
+    background-color:#222;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/pajaro.png");
+    background-size: cover;
+}
+
+#titulo {
+    font-family: "Varela Round", sans-serif;    
+    font-size: 2em;
+    color: #fff;
+}
+
+#usuario{
+    border: 1px solid blue;
+}
+
+/*  ------------  NAV  -----------*/
+nav {
+    background-color: white;
+    color: black;
+}
+
+#hamburguesa {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-hamburguesa {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#bbb;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+.boton-hamburguesa:hover {
+    background-color: #999;
+    border: 1px solid #000;
+    cursor :pointer;
+}
+
+/* mobile first */
+#barra {
+    display: none;
+}
+/* desktop second */
+@media (min-width:601px) {
+    #hamburguesa {
+        display:none
+    }
+    #barra {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #barra div {
+        margin : 20px;
+        padding: 20px;
+    }
+    #barra div:hover {
+        background-color: #999;
+        cursor: pointer;
+    }
+}
+/*  ------------  MAIN  -----------*/
+main {
+    background-color: #99b;
+}
+
+footer {
+    background-color:#222;
+}
+
+/*  ------------  FOOTER  -----------*/
+footer div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;    
+}

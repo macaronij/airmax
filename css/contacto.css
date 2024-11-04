@@ -1,0 +1,38 @@
+.formulario {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-recuadro {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(125, 125, 185, 0.7);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    width: 200px;
+}
+
+.boton {
+    border: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(65, 65, 105, 1);
+    color: white;
+}
+
+.centrado {
+    margin: auto;
+}
+
+.titulo {
+    font-size: larger;
+}
