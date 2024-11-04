@@ -3,7 +3,6 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    /* align-items: top; */
     margin-top: 20px;
 }
 
@@ -18,16 +17,6 @@
 
 label {
     width: 200px;
-}
-
-.boton {
-    border: none;
-    height: 40px;
-    width: 150px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: rgba(65, 65, 105, 1);
-    color: white;
 }
 
 .centrado {
