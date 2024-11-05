@@ -9,9 +9,13 @@ body {
     display: grid;
     /* width: 100%; */
     height: 100vh;
-    grid-template-rows: 65px 50px 1fr 50px;
+    grid-template-rows: 115px 1fr 50px;
 }
 
+.relleno {
+    width: 100%;
+    height: 115px;
+}
 
 
 /* PARA QUE SIRVA PARA TODOS LOS HTML */
@@ -34,6 +38,8 @@ header {
     padding: 10px;
     display: flex;
     justify-content: center;
+    position: fixed;
+    width: 100%;
 }
 
 #logo {
@@ -62,6 +68,9 @@ header {
 nav {
     background-color: white;
     color: black;
+    position: fixed;
+    top: 70px;
+    width: 100%;
 }
 
 #hamburguesa {
@@ -121,6 +130,8 @@ nav {
 main {
     background-color: #99b;
 }
+
+
 
 footer {
     background-color:#222;
