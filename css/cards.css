@@ -30,23 +30,6 @@
 .card-foto {
     width: 100%;
     height: 200px;
-    background-size: cover;
-}
-
-.cartera .card:nth-child(1) .card-foto {
-    background-image: url("https://picsum.photos/350/200?random1") ;
-}
-
-.cartera .card:nth-child(2) .card-foto {
-    background-image: url("https://picsum.photos/350/200?random2") ;
-}
-
-.cartera .card:nth-child(3) .card-foto {
-    background-image: url("https://picsum.photos/350/200?random3") ;
-}
-
-.cartera .card:nth-child(4) .card-foto {
-    background-image: url("https://picsum.photos/350/200?random4") ;
 }
 
 .card-titulo {
