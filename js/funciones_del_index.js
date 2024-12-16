@@ -1,3 +1,11 @@
+if (localStorage.getItem("carrito") == null) {
+    console.log(`No se encontro carrito, inicializando`);
+    var carrito = [];
+} else {
+    var carritoSTRING = localStorage.getItem("carrito");
+    var carrito = JSON.parse(carritoSTRING);
+    console.log(`Carrito encontrado: ${carrito}`);
+}
 
 document.addEventListener("DOMContentLoaded",()=>{
     let productosContainer = document.getElementById("productos-container");
@@ -19,10 +27,14 @@ document.addEventListener("DOMContentLoaded",()=>{
                         <div class="card-texto">${elemento.description}</div>
                     </div>`;
                     
-                    // const botonAgregar = cardDiv.querySelector("button");
-                    // botonAgregar.addEventListener("click", () => {
-                    //     alert("agregar producto al carrito");
-                    // })
+                    const botonAgregar = cardDiv.querySelector("button");
+                    botonAgregar.addEventListener("click", () => {
+                        // alert(`agregar producto ${elemento.title} al carrito`);
+                        // localStorage.setItem("titulo",elemento.title);
+                        // localStorage.setItem("precio", elemento.price)
+                        carrito.push([elemento.title,elemento.price])
+                        localStorage.setItem("carrito", JSON.stringify(carrito));
+                    })
 
                     productosContainer.appendChild(cardDiv);
                 });
