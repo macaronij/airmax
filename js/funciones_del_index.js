@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded",()=>{
     let productosContainer = document.getElementById("productos-container");
-    fetch("https://dummyjson.com/products?limit=20")
+    fetch("https://dummyjson.com/products?limit=5")
         .then(response => response.json())
         .then(data => 
             {
