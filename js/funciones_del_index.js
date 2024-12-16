@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                     `<div class="card">
                         <img class="card-foto" src="${elemento.thumbnail}">
                         <div class="card-titulo"><h3>${elemento.title}</h3></div>
+                        <div class="card-precio">Precio: $${elemento.price}</div>
                         <a href="carrito.html"><button class="boton">Comprar</button></a>
                         <div class="card-texto">${elemento.description}</div>
                     </div>`;
