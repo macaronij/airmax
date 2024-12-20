@@ -29,9 +29,6 @@ document.addEventListener("DOMContentLoaded",()=>{
                     
                     const botonAgregar = cardDiv.querySelector("button");
                     botonAgregar.addEventListener("click", () => {
-                        // alert(`agregar producto ${elemento.title} al carrito`);
-                        // localStorage.setItem("titulo",elemento.title);
-                        // localStorage.setItem("precio", elemento.price)
                         carrito.push([elemento.title,elemento.price])
                         localStorage.setItem("carrito", JSON.stringify(carrito));
                     })
